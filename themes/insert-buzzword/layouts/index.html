@@ -1,0 +1,68 @@
+{{ partial "header.html" . }}
+
+<!--replaces jumbotron -->
+<div class = "container-fluid">
+<div class="jumbotron">
+<div class="row">
+				<div class="col-md-6">
+					<p><b>Insert Buzzword</b> is a fireside chat between Ops and Dev.</p>
+				</div>
+				<div class="col-md-2">
+					<a href = "/host/christian"><img alt="Christian Kniep" src="http://qnib.org/pics/Christian.png" class="img-circle image-centered image-responsive" width="150px" /></a></a>
+          <p align = "center">Christian</p>
+				</div>
+				<div class="col-md-2">
+					<a href = "/host/hagen"><img alt="Hagen Tönnies" src="https://archive.fosdem.org/2015/schedule/speaker/hagen_tonnies/1417e44b14e2f7cb91b8bc6acc9909eb4829dff894d3480a7590e4499a5984b8.jpg" class="img-circle image-centered image-responsive" width="150px"/></a>
+          <p align = "center">Hagen</p>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-12">
+					<ul class="list-inline">
+						<li>
+							<a class="btn btn-default" href="https://itunes.apple.com/de/podcast/insertbuzzword/id1114280923?l=en&mt=2" class="subscribe-button"><i class="fa fa-apple"></i> Subscribe on iTunes</a>
+						</li>
+						<li>
+							<a class="btn btn-default" href="http://qnib.org/data/InsertBuzzword/itunes.xml" class="subscribe-button"><i class="fa fa-rss"></i> Subscribe via RSS</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+</div> <!--jumbo-->
+</div> <!--container-->
+<!-- end new jumbo -->
+    <section class="container-fluid episode-list">
+      <div class="col-md-12 episode-list-header">
+        <h3>All Episodes</h3>
+      </div>
+
+    <div class="row">
+
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "episode") }}
+        {{ range $paginator.Pages }}
+        <a href="{{ .Permalink }}">
+          <div class="col-md-4">
+            <div class="episode-image-homepage">
+              <img src = "{{ .Site.BaseURL }}/episode/img/{{ .Params.friendly }}.png" class="img-responsive" alt="{{ .Title }}">
+              <div class="caption post-content"></div>
+              <div class="details">
+                {{ title .Title }}
+              </div>
+
+            </div>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </section>
+    <!--pagination-->
+    <div class="row">
+  		<div class="col-md-offset-4 col-md-6">
+        {{ template "_internal/pagination.html" . }}
+  		</div>
+  	</div>
+    <!--pagination-->
+
+
+{{ partial "footer.html" . }}

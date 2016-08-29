@@ -1,0 +1,39 @@
+BaseURL = "http://qnib.org/insert-buzzword/"
+# BaseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Insert Buzzword"
+theme = "insert-buzzword"
+canonifyurls = false
+buildFuture = false
+buildDrafts = false
+dataDir = "data"
+disqusShortname = "insertbuzzword"
+archetypedir = "archetypes"
+paginate = 9
+
+[permalinks]
+	page = "/:filename/"
+	about = "/:filename/"
+	episode = "/:filename/"
+	sponsor = "/:filename"
+	redirect = "/:filename"
+
+[params]
+Twitter = "//twitter.com/CQnib"
+Description = "Fireside chat between Ops and Dev."
+	[params.authors]
+	  [params.authors.Matt]
+			name	= "Christian Kniep"
+			thumbnail = "http://qnib.org/pics/Christian.png"
+			bio = "Christian passion is to improve the ease of use of those stubborn machines we call IT equipment. He started at the dawn of the Euro (2002) as an generic System Administrator, installing desktop and server systems running MacOS (9/X), Windows and Linux. Since then Christian iterated through support positions, mostly in an automotive R&D context. He maintained end user applications, virtual reality systems (functional/esthetic), in-house infrastructure and shifted towards HPC cluster environments. At the latest non-R&D position Christian was in charge of an InfiniBand network with a couple of thousand nodes. In 2013 he moved to Paris to work as an R&D Engineer in the HPC section of Bull SAS. His job (and passion) was to help shaping a Log and Performance Mangement solution that will withstand the node increasement introduced by the next generation of supercomputers. At the end of 2014 Christian moved back to Germany to persue his passions in a more unconstrained fashion."
+			[params.authors.Christian.social]
+				github = "ChristianKniep"
+				facebook = "ChristianKniep"
+				twitter = "CQnib"
+				linkedin = "christian-kniep-3004b053"
+		[params.authors.Hagen]
+			name = "Hagen Tönnies"
+			thumbnail = "https://archive.fosdem.org/2015/schedule/speaker/hagen_tonnies/1417e44b14e2f7cb91b8bc6acc9909eb4829dff894d3480a7590e4499a5984b8.jpg"
+			bio = ""
+				[params.authors.Hagen.social]
+					twitter = "sojoner"
