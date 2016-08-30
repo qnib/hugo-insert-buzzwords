@@ -15,6 +15,5 @@ podcast_duration = "4675.0"
 sponsors = []
 tags = []
 title = "[2] Ruby Mett"
-youtube = ""
 
 +++

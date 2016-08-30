@@ -15,6 +15,5 @@ podcast_duration = "5194.0"
 sponsors = []
 tags = ["streams", "apache"]
 title = "[8] Apache Stream Processing"
-youtube = ""
 
 +++

@@ -15,6 +15,5 @@ podcast_duration = "5007.0"
 sponsors = []
 tags = []
 title = "[4] Buzzwords Inception"
-youtube = ""
 
 +++

@@ -15,6 +15,5 @@ podcast_duration = "5035.0"
 sponsors = []
 tags = []
 title = "[6] Docker Bundle"
-youtube = ""
 
 +++

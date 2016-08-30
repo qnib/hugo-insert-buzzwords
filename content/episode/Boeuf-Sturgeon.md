@@ -15,6 +15,5 @@ podcast_duration = "4086.0"
 sponsors = []
 tags = []
 title = "[3] Boeuf Sturgeon [DE]"
-youtube = ""
 
 +++
