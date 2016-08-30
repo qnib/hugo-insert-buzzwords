@@ -15,6 +15,5 @@ podcast_duration = "3593.0"
 sponsors = []
 tags = []
 title = "1 - Piped Metrics [DE]"
-youtube = ""
 
 +++

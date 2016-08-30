@@ -1,5 +1,4 @@
-BaseURL = "http://qnib.org/insert-buzzword/"
-# BaseURL = "http://localhost:1313/"
+baseurl = "http://qnib.org/insert-buzzword/"
 languageCode = "en-us"
 title = "Insert Buzzword"
 theme = "insert-buzzword"

@@ -3,13 +3,13 @@
 
 name = "InsertBuzzword"
 license = "AL2.0"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/qnib/hugo-insert-buzzwords/blob/master/LICENSE"
 description = ""
-homepage = "http://siteforthistheme.com/"
+homepage = "http://qnib.org/insert-buzzword/"
 tags = ["", ""]
 features = ["", ""]
 min_version = 0.13
 
 [author]
   name = "Christian Kniep"
-  homepage = "http://qnib.org"
+  homepage = "http://qnib.org/"
